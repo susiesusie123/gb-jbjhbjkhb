@@ -60,3 +60,10 @@
 
     </application>
 </manifest>
+<supports-screens
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:xlargeScreens="false"
+    android:resizeable="true"
+    android:anyDensity="false" />
