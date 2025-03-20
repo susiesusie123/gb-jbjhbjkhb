@@ -5,9 +5,6 @@ on:
     branches:
       - main  # Change to your default branch if needed
   pull_request:
-  
-- name: Debug Directory
-  run: ls -la && pwd
 
 jobs:
   build-apk:
