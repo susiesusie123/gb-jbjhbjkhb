@@ -3,7 +3,7 @@ name: Build Flutter APK
 on:
   push:
     branches:
-      - main  # Change this to your desired branch
+      - main  # Change this if needed
 
 jobs:
   build:
@@ -16,16 +16,20 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.x'  # Change to your Flutter version
+          flutter-version: '3.x'  # Change this if needed
 
       - name: Install dependencies
-        run: flutter pub get
+        run: |
+          cd iddddd
+          flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release
+        run: |
+          cd iddddd
+          flutter build apk --release
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: iddddd-apk
+          path: iddddd/build/app/outputs/flutter-apk/app-release.apk
