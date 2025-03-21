@@ -3,12 +3,11 @@
     <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off -->
     <style name="LaunchTheme" parent="Theme.Material.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/launch_background</item>
-        <item name="android:windowFullscreen">true</item>
     </style>
 
     <!-- Fullscreen Normal Theme -->
     <style name="NormalTheme" parent="Theme.Material.Light.NoActionBar">
-        <item name="android:windowBackground">?attr/colorBackground</item>
+        <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
