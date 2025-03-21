@@ -1,0 +1,4 @@
+<resources>
+    <!-- Add the colorBackground attribute if it's missing -->
+    <attr name="colorBackground" format="color"/>
+</resources>
